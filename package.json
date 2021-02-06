@@ -1,9 +1,15 @@
 {
-  "name": "@lukaspolak/create-typescript-library",
+  "name": "@lukaspolak/kebab-case",
   "version": "0.0.0",
   "description": "A repository template for a TypeScript library.",
-  "keywords": [],
-  "repository": "git@github.com:lukaspolak/create-typescript-library.git",
+  "keywords": [
+    "kebab",
+    "kebab case",
+    "kebab-case",
+    "javascript",
+    "js"
+  ],
+  "repository": "git@github.com:lukaspolak/kebab-case.git",
   "license": "MIT",
   "author": "Lukas Polak <lukash.polak@gmail.com> (https://lukaspolak.com/)",
   "main": "lib/umd/index.js",
@@ -23,6 +29,7 @@
     "prepublishOnly": "yarn build && yarn test",
     "start": "rollup -c rollup.config.ts -w",
     "test": "jest",
+    "test:coverage": "jest --collectCoverage",
     "test:silent": "jest --silent",
     "test:watch": "jest --watch",
     "preversion": "yarn build && yarn test",
