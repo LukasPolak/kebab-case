@@ -1,30 +1,46 @@
-# create-typescript-library
+# kebab-case
 
-> A short description about what your library is.
-
-## Motivation
-
-> Elaborate on the reason behind this library: why may people need it? What issues does it solve? How is it different from the similar libraries?
+Convert a string to kebab-case, i.e. its dash-separated form
 
 ## Getting started
 
-> Go through the steps necessary to install, configure, and use your library.
+To use this package, you only need to install this dependency, import it and invoke the `kebabCase` function, e.g.:
+
+```js
+import { kebabCase } from '@lukaspolak/kebab-case'
+
+kebabCase('Lorem ipsum dolor sit amet') // returns "lorem-ipsum-dolor-sit-amet"
+```
 
 ### Install
 
 ```bash
-npm install @lukaspolak/create-typescript-library
+npm install @lukaspolak/kebab-case
 ```
 
 or
 
 ```bash
-yarn add @lukaspolak/create-typescript-library
+yarn add @lukaspolak/kebab-case
 ```
 
 ## Documentation
 
-> Reference the documentation website, or write the documentation straight in this README file.
+| passed value                                      | expected value             |
+| ------------------------------------------------- | -------------------------- |
+| loremIpsumDolorSitAmet                            | lorem-ipsum-dolor-sit-amet |
+| LOREM_IPSUM_DOLOR_SIT_AMET                        | lorem-ipsum-dolor-sit-amet |
+| lorem.ipsum.dolor.sit.amet                        | lorem-ipsum-dolor-sit-amet |
+| lorem ipsum dolor sit amet                        | lorem-ipsum-dolor-sit-amet |
+| lorem-ipsum-dolor-sit-amet                        | lorem-ipsum-dolor-sit-amet |
+| LoremIpsumDolorSitAmet                            | lorem-ipsum-dolor-sit-amet |
+| lorem/ipsum/dolor/sit/amet                        | lorem-ipsum-dolor-sit-amet |
+| lorem_ipsum_dolor_sit_amet                        | lorem-ipsum-dolor-sit-amet |
+| Lorem Ipsum Dolor Sit Amet                        | lorem-ipsum-dolor-sit-amet |
+| LOREM IPSUM DOLOR SIT AMET                        | lorem-ipsum-dolor-sit-amet |
+| Lorem ipsum dolor sit amet                        | lorem-ipsum-dolor-sit-amet |
+| Lorem ipsum dolor sit amet.,/#!$%^&\*;:{}=-\_`~() | lorem-ipsum-dolor-sit-amet |
+| Lorem ipsum #!$%^&*;(dolor sit amet)#!$%^&\*;'    | lorem-ipsum-dolor-sit-amet |
 
 ## Contributing
 
@@ -33,25 +49,3 @@ Please read the [Contribution guidelines](.github/CONTRIBUTING.md) to start with
 ## Why the library is prefixed with `@lukaspolak/`
 
 There are a lot of similar libraries/packages on [GitHub](https://github.com/features/packages) and [npm](https://www.npmjs.com/), that can do the same. I wanted to enhance my programming skills, and I didn't want to find a unique name for the package.
-
-## INITIALIZATION TODO
-
-- [ ] replace `create-typescript-library` with repository name
-- [ ] update keywords in `package.json` file
-- [ ] remove `INITIALIZATION TODO` section
-
-For [React](https://reactjs.org/) based library install (`yarn add @types/react react -D`) dev dependencies, and update `tsconfig.json` file with:
-
-```jsonc
-{
-  // ...
-  "compilerOptions": {
-    // ...
-    "allowSyntheticDefaultImports": true, // replace original
-    "jsx": "react", // add
-    "esModuleInterop": true // add
-    // ...
-  }
-  // ...
-}
-```
