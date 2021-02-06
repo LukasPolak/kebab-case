@@ -1,5 +1,7 @@
 # kebab-case
 
+![checks-status](https://img.shields.io/github/checks-status/LukasPolak/kebab-case/main?style=flat-square) ![workflow/status](https://img.shields.io/github/workflow/status/lukaspolak/kebab-case/CI?style=flat-square) ![codecov](https://img.shields.io/codecov/c/github/lukaspolak/kebab-case?style=flat-square) ![npm bundle size](https://img.shields.io/bundlephobia/min/@lukaspolak/kebab-case?style=flat-square) ![npm](https://img.shields.io/npm/v/@lukaspolak/kebab-case?style=flat-square)
+
 Convert a string to kebab-case, i.e. its dash-separated form
 
 ## Getting started
