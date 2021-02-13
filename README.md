@@ -4,6 +4,10 @@
 
 Convert a string to kebab-case, i.e. its dash-separated form
 
+## Demo
+
+[CodeSandbox](https://codesandbox.io/s/kebab-case-lmkdz?file=/src/App.tsx)
+
 ## Getting started
 
 To use this package, you only need to install this dependency, import it and invoke the `kebabCase` function, e.g.:

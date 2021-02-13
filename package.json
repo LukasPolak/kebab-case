@@ -1,7 +1,7 @@
 {
   "name": "@lukaspolak/kebab-case",
   "version": "0.0.1",
-  "description": "A repository template for a TypeScript library.",
+  "description": "Convert a string to kebab-case, i.e. its dash-separated form",
   "keywords": [
     "kebab",
     "kebab case",
